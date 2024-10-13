@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Page Summarizer</title>
+  <style>
+    body {
+      width: 300px;
+      min-height: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #summarizeBtn {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #summary {
+      margin-top: 10px;
+      white-space: pre-wrap;
+      border: 1px solid #ddd;
+      padding: 10px;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    #loading {
+      display: none;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="summarizeBtn">Summarize</button>
+  <div id="loading">Summarizing...</div>
+  <div id="summary">Click the button above to summarize the current page.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

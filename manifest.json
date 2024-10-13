@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Web Page Summarizer",
+  "version": "1.0",
+  "description": "Summarizes web page content",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
